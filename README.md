@@ -1,3 +1,3 @@
 # Speculator3000
-A C++ tool to track Pokemon Card Values 
+A tool to track Pokemon Card Values 
 Work In Progress
