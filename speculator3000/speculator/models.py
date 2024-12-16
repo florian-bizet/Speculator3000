@@ -2,10 +2,16 @@ from django.db import models
 
 # Create your models here.
 
+# Series Class
+class Series(models.Model):
+    seriesName = models.CharField(max_length=100)
+
+
 # Extension class
 class Extension(models.Model):
     extensionName = models.CharField(max_length=100)
     extensionReleaseDate = models.DateField()
+    extensionSeries = models.ForeignKey(Series, on_delete=models.CASCADE)
     
 
 # Card class
